@@ -1,0 +1,46 @@
+// ========== Menu Toggles ========== //
+
+
+
+.menu-toggle,
+.sub-menu-toggle {
+	display: block;
+	margin: 0 auto;
+	border-width: 0;
+	overflow: hidden;
+	text-align: center;
+	visibility: visible;
+	@include media($navigation__breakpoint) {display: none; visibility: hidden;}
+
+	&:focus, &:hover {
+		border-width: 0;
+	}
+}
+
+.menu-toggle {
+	font-size: 20px;
+	line-height: 20px;
+	padding: 15px 20px;
+	z-index: 1000;
+	&.activated::before {content: "\f335";}
+}
+
+.sub-menu-toggle {
+	padding: 15px;
+	z-index: 100;
+	&::before {text-rendering: auto; transform: rotate(0); transition: transform 0.25s ease-in-out;}
+	&.activated::before {transform: rotate(180deg);}
+}
+
+
+
+
+
+
+
+.site-header .menu-toggle::before {
+	margin-right: 5px;
+	position: relative;
+	text-rendering: auto;
+	top: 1px;
+}

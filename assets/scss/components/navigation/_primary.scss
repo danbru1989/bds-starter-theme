@@ -1,0 +1,79 @@
+// ========== Primary Navigation ========== //
+
+.nav-primary {
+	background: $navigation__nav-primary--mobile-background;
+	font-size: $navigation__nav-primary--mobile-font-size;
+	font-weight: $navigation__nav-primary--mobile-font-weight;
+	@include media($navigation__breakpoint) {
+		color: $navigation__nav-primary--desktop-color;
+		background: $navigation__nav-primary--desktop-background;
+		font-size: $navigation__nav-primary--desktop-font-size;
+		font-weight: $navigation__nav-primary--desktop-font-weight;
+	}
+
+	.genesis-nav-menu {
+		justify-content: $navigation__nav-primary--justify-content;
+		max-width: $navigation__nav-primary--max-width;
+	}
+
+	.menu-item a {
+		color: $navigation__nav-primary--mobile-color;
+		padding: $navigation__nav-primary-menu-item--mobile-padding;
+		@include media($navigation__breakpoint) {
+			color: $navigation__nav-primary--desktop-color;
+			padding: $navigation__nav-primary-menu-item--desktop-padding;
+		}
+
+		&:focus,
+		&:hover,
+		.current-menu-item > a 
+		.sub-menu .current-menu-item > a:focus,
+		.sub-menu .current-menu-item > a:hover {
+			color: $navigation__nav-primary-menu-item--mobile-color-hover;
+			background: $navigation__nav-primary-menu-item--mobile-background-hover;
+			@include media($navigation__breakpoint) {
+				color: $navigation__nav-primary-menu-item--desktop-color-hover;
+				background: $navigation__nav-primary-menu-item--desktop-background-hover;
+			}
+		}
+	}
+
+	.sub-menu {
+		background: $navigation__nav-primary-sub-menu--mobile-background;
+		width: $navigation__nav-primary-sub-menu--width;
+		@include media($navigation__breakpoint) {
+			background: $navigation__nav-primary-sub-menu--desktop-background;
+		}
+		a {
+			color: $navigation__nav-primary-sub-menu-item--mobile-color;
+			font-size: $navigation__nav-primary-sub-menu--mobile-font-size;
+			font-weight: $navigation__nav-primary-sub-menu--mobile-font-weight;
+			@include media($navigation__breakpoint) {
+				color: $navigation__nav-primary-sub-menu-item--desktop-color;
+				font-size: $navigation__nav-primary-sub-menu--desktop-font-size;
+				font-weight: $navigation__nav-primary-sub-menu--desktop-font-weight;
+			}
+			&:hover, &:focus {
+				color: $navigation__nav-primary-sub-menu-item--mobile-color-hover;
+				@include media($navigation__breakpoint) {
+					color: $navigation__nav-primary-sub-menu-item--desktop-color-hover;
+					background: $navigation__nav-primary-sub-menu-item--desktop-background-hover;
+				}
+			}
+		}
+	}
+
+	.sub-menu-toggle {
+		color: $navigation__nav-primary--mobile-color;
+		background: $navigation__nav-primary--mobile-background;
+		.sub-menu .menu-item-has-children & {
+			color: $navigation__nav-primary-sub-menu-item--mobile-color;
+			background: $navigation__nav-primary-sub-menu--mobile-background;
+		}
+	}
+}
+
+#genesis-mobile-nav-primary.menu-toggle {
+	color: $navigation__nav-primary--mobile-color;
+	background: $navigation__nav-primary--mobile-background;
+}

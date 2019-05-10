@@ -1,0 +1,54 @@
+// ========== Navigation ========== //
+
+
+
+$navigation__breakpoint     : l;
+
+
+
+// ========== Primary Navigation ========== //
+
+    $navigation__nav-primary--max-width                : 1280px;
+    $navigation__nav-primary--justify-content          : center;
+    $navigation__nav-primary-sub-menu--width           : 200px;
+
+
+    // ===== Mobile ===== //
+
+        $navigation__nav-primary--mobile-color             : $color--text-dark;
+        $navigation__nav-primary--mobile-background        : white;
+        $navigation__nav-primary--mobile-font-size         : 18px;
+        $navigation__nav-primary--mobile-font-weight       : normal;
+
+        // Menu Items
+        $navigation__nav-primary-menu-item--mobile-color-hover              : $color--link-dark-hover;
+        $navigation__nav-primary-menu-item--mobile-background-hover         : $color--quaternary;
+        $navigation__nav-primary-menu-item--mobile-padding                  : 15px; // Use this to adjust height
+
+        // Sub Menus
+        $navigation__nav-primary-sub-menu--mobile-background                : white;
+        $navigation__nav-primary-sub-menu--mobile-font-size                 : .9em;
+        $navigation__nav-primary-sub-menu--mobile-font-weight               : normal;
+        $navigation__nav-primary-sub-menu-item--mobile-color                : $color--quinary;
+        $navigation__nav-primary-sub-menu-item--mobile-color-hover          : $color--link-dark-hover;
+
+
+    // ===== Desktop ===== //
+
+        $navigation__nav-primary--desktop-color            : $color--text-dark;
+        $navigation__nav-primary--desktop-background       : transparent;
+        $navigation__nav-primary--desktop-font-size        : 18px;
+        $navigation__nav-primary--desktop-font-weight      : 700;
+        
+        // Menu Items
+        $navigation__nav-primary-menu-item--desktop-color-hover             : $color--link-dark-hover;
+        $navigation__nav-primary-menu-item--desktop-background-hover        : $color--quaternary;
+        $navigation__nav-primary-menu-item--desktop-padding                 : 15px; // Use this to adjust height
+
+        // Sub Menus
+        $navigation__nav-primary-sub-menu--desktop-background               : white;
+        $navigation__nav-primary-sub-menu--desktop-font-size                : .9em;
+        $navigation__nav-primary-sub-menu--desktop-font-weight              : normal;
+        $navigation__nav-primary-sub-menu-item--desktop-color               : $color--quinary;
+        $navigation__nav-primary-sub-menu-item--desktop-color-hover         : $color--link-dark-hover;
+        $navigation__nav-primary-sub-menu-item--desktop-background-hover    : $color--quaternary;

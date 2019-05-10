@@ -1,0 +1,22 @@
+// ========== Columns ========== //
+
+.wp-block-columns {
+	display: grid;
+	grid-gap: $mobile-spacing;
+	@include media(ms) {
+		grid-gap: $desktop-spacing;
+
+		&.has-2-columns {grid-template-columns: repeat(2, 1fr);}
+		&.has-3-columns {grid-template-columns: repeat(3, 1fr);}
+		&.has-4-columns {grid-template-columns: repeat(4, 1fr);}
+		&.has-5-columns {grid-template-columns: repeat(5, 1fr);}
+		&.has-6-columns {grid-template-columns: repeat(6, 1fr);}
+	}
+
+	&.alignfull {@include space(padding, rl);}
+}
+
+.wp-block-column {
+	margin: 0 !important;
+	&:last-child {margin-bottom: 0 !important;}
+}

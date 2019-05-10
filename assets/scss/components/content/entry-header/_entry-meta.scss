@@ -1,0 +1,10 @@
+// ========== Entry Meta ========== //
+
+.entry-header .entry-meta {
+	margin-bottom: $mobile-spacing;
+}
+
+.entry-comments-link::before {
+	content: "\2014";
+	margin: 0 6px 0 2px;
+}

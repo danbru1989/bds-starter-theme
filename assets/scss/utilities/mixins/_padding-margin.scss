@@ -1,0 +1,57 @@
+// ========== Padding & Margin Mixin ========== //
+
+
+
+// TO USE: "@include space(padding, all);"
+
+@mixin space( $type, $sides ) {
+	@if $type == "padding" and $sides == "all" {
+		padding: $mobile-spacing;
+		@include media(ms) {padding: $desktop-spacing;}
+	}
+	@else if $type == "padding" and $sides == "rl" {
+		padding-right: $mobile-spacing;
+		padding-left: $mobile-spacing;
+		@include media(ms) {padding-right: $desktop-spacing; padding-left: $desktop-spacing;}
+	}
+	@else if $type == "padding" and $sides == "tb" {
+		padding-top: $mobile-spacing;
+		padding-bottom: $mobile-spacing;
+		@include media(ms) {padding-top: $desktop-spacing; padding-bottom: $desktop-spacing;}
+	}
+	@else if $type == "margin" and $sides == "all" {
+		margin-right: $mobile-spacing;
+		margin-left: $mobile-spacing;
+		@include media(ms) {margin-right: $desktop-spacing; margin-left: $desktop-spacing;}
+	}
+	@else if $type == "margin" and $sides == "tb" {
+		margin-top: $mobile-spacing;
+		margin-bottom: $mobile-spacing;
+		@include media(ms) {margin-top: $desktop-spacing; margin-bottom: $desktop-spacing;}
+	}
+	@else if $type == "margin" and $sides == "rl" {
+		margin-right: $mobile-spacing;
+		margin-left: $mobile-spacing;
+		@include media(ms) {margin-right: $desktop-spacing; margin-left: $desktop-spacing;}
+	}
+	@else if $type == "margin" and $sides == "b" {
+		margin-bottom: $mobile-spacing;
+		@include media(ms) {margin-bottom: $desktop-spacing;}
+	}
+}
+
+/**
+ * Margin, No Edge
+ * Removes left margin from first item, right margin from last item
+ */
+ @mixin margin-no-edge( $margin ) {
+	margin: $margin;
+  
+	&:first-child {
+	  margin-left: 0;
+	}
+  
+	&:last-child {
+	  margin-right: 0;
+	}
+}

@@ -1,0 +1,24 @@
+// ========== Animations ========== //
+
+
+
+%transition {
+	transition: all 0.2s ease-in-out;
+}
+
+
+// Locations of animations and transitions to refactor
+
+// submenu
+// submenu toggle
+
+button,
+input:focus,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+textarea:focus,
+.button,
+.gallery img {
+	@extend %transition;
+}

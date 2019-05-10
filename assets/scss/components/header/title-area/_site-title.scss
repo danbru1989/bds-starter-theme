@@ -1,0 +1,14 @@
+// ========== Site Title ========== //
+
+.site-title {
+	font-size: 30px;
+	font-weight: 700;
+	margin-bottom: 0;
+	a {
+		color: $color--text-dark;
+		&:hover, &:focus {
+			color: $color--link-dark-hover;
+			text-decoration: none;
+		}
+	}
+}

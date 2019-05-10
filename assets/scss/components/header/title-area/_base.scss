@@ -1,0 +1,9 @@
+// ========== Base ========== //
+
+.title-area {
+	text-align: center;
+	@include space(padding, all);
+
+	@include media(ml) {
+	}
+}

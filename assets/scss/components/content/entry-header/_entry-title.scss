@@ -1,0 +1,25 @@
+// ========== Entry Title ========== //
+
+
+
+.page .entry-header,
+.archive-description {
+	margin: 0 0 50px;
+	max-width: 100%;
+
+	.entry-title,
+	.archive-title {}
+}
+
+.post .entry-header {
+
+	.entry-title {
+
+		a {
+			color: $color--text-dark;
+			&:focus, &:hover {
+				color: $color--link-dark-hover;
+			}
+		}
+	}
+}

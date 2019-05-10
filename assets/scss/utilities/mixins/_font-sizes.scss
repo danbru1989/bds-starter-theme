@@ -1,0 +1,30 @@
+// ========== Font Sizes Mixin ========== //
+
+
+
+// TO USE: "@include font-sizes( 18px, 24px);"
+
+@mixin font-sizes( $base: null, $large: null, $extra-large: null, $extra-extra-large: null ) {
+
+    @if ( $base ) {
+        font-size: $base;
+    }
+
+    @if( $large ) {
+        @include media($break-point-l) {
+            font-size: $large;
+        }
+    }
+
+    @if( $extra-large ) {
+        @include media($break-point-xl) {
+            font-size: $extra-large;
+        }
+    }
+
+    @if( $extra-extra-large ) {
+        @include media($break-point-xxl) {
+            font-size: $extra-extra-large;
+        }
+    }
+}
