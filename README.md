@@ -4,4 +4,6 @@ This is the custom Genesis starter theme for Brubaker Design Services. It provid
 
 ## Change Log
 
+1.1.0 – Merged partials with components.
+
 1.0.0 – Initial Launch.
