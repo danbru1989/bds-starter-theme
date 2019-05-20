@@ -31,11 +31,10 @@ function load_non_admin_files() {
 		'components/woocommerce/woocommerce-output.php',
 		'components/woocommerce/woocommerce-notice.php',
 		'components/simple-social-icons/simple-social-icons.php',
-
-		'partials/navigation.php',
-		'partials/comments.php',
-		'partials/author-box.php',
-		'partials/footer.php',
+		'components/navigation.php',
+		'components/comments.php',
+		'components/author-box.php',
+		'components/footer.php',
 	);
 
 	load_specified_files( $filenames );
