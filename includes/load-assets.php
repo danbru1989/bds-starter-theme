@@ -23,7 +23,7 @@ function enqueue_assets() {
 
 	wp_enqueue_style(
 		CHILD_THEME_TEXT_DOMAIN . '-fonts',
-		'//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700',
+		'//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700|Roboto+Slab:400,700',
 		array(),
 		CHILD_THEME_VERSION
 	);
