@@ -4,6 +4,8 @@ This is the custom Genesis starter theme for Brubaker Design Services. It provid
 
 ## Change Log
 
+1.1.4 – Replaced old contants.
+
 1.1.3 – Added WPForms update.
 
 1.1.2 – Fixed "genesis" parent theme.
