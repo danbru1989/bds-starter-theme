@@ -21,7 +21,7 @@ add_action( 'genesis_setup', __NAMESPACE__ . '\setup_child_theme', 15 );
  */
 function setup_child_theme() {
 	// Set Localization (do not remove).
-	load_child_theme_textdomain( CHILD_THEME_TEXT_DOMAIN, apply_filters( 'child_theme_textdomain', CHILD_THEME_DIR . '/assets/languages', CHILD_THEME_TEXT_DOMAIN ) );
+	load_child_theme_textdomain( genesis_get_theme_handle(), apply_filters( 'child_theme_textdomain', CHILD_THEME_DIR . '/assets/languages', genesis_get_theme_handle() ) );
 
 	configure_theme_supports();
 	configure_image_sizes();
@@ -66,8 +66,8 @@ function configure_theme_supports() {
 			'flex-width'  => true,
 		),
 		'genesis-menus'                   => array(
-			'primary'   => __( 'Main Menu', CHILD_THEME_TEXT_DOMAIN ),
-			'secondary' => __( 'Footer Menu', CHILD_THEME_TEXT_DOMAIN ),
+			'primary'   => __( 'Main Menu', genesis_get_theme_handle() ),
+			'secondary' => __( 'Footer Menu', genesis_get_theme_handle() ),
 		),
 		'genesis-responsive-viewport'     => null,
 		'genesis-after-entry-widget-area' => null,
@@ -79,39 +79,39 @@ function configure_theme_supports() {
 		'disable-custom-font-sizes'       => null,
 		'editor-color-palette'            => array(
 			array(
-				'name'  => __( 'White', CHILD_THEME_TEXT_DOMAIN ),
+				'name'  => __( 'White', genesis_get_theme_handle() ),
 				'slug'  => 'white',
 				'color' => '#ffffff',
 			),
 			array(
-				'name'  => __( 'Grey', CHILD_THEME_TEXT_DOMAIN ),
+				'name'  => __( 'Grey', genesis_get_theme_handle() ),
 				'slug'  => 'grey',
 				'color' => '#bebebe',
 			),
 			array(
-				'name'  => __( 'Black', CHILD_THEME_TEXT_DOMAIN ),
+				'name'  => __( 'Black', genesis_get_theme_handle() ),
 				'slug'  => 'black',
 				'color' => '#303030',
 			),
 		),
 		'editor-font-sizes'               => array(
 			array(
-				'name' => __( 'Small', CHILD_THEME_TEXT_DOMAIN ),
+				'name' => __( 'Small', genesis_get_theme_handle() ),
 				'slug' => 'small',
 				'size' => 14,
 			),
 			array(
-				'name' => __( 'Normal', CHILD_THEME_TEXT_DOMAIN ),
+				'name' => __( 'Normal', genesis_get_theme_handle() ),
 				'slug' => 'normal',
 				'size' => 18,
 			),
 			array(
-				'name' => __( 'Large', CHILD_THEME_TEXT_DOMAIN ),
+				'name' => __( 'Large', genesis_get_theme_handle() ),
 				'slug' => 'large',
 				'size' => 24,
 			),
 			array(
-				'name' => __( 'Largest', CHILD_THEME_TEXT_DOMAIN ),
+				'name' => __( 'Largest', genesis_get_theme_handle() ),
 				'slug' => 'largest',
 				'size' => 32,
 			),
@@ -196,9 +196,9 @@ function remove_metaboxes( $_genesis_admin_settings ) {
  */
 function genesis_sample_responsive_menu_settings() {
 	$settings = array(
-		'mainMenu'         => __( 'Menu', CHILD_THEME_TEXT_DOMAIN ),
+		'mainMenu'         => __( 'Menu', genesis_get_theme_handle() ),
 		'menuIconClass'    => 'dashicons-before dashicons-menu',
-		'subMenu'          => __( 'Submenu', CHILD_THEME_TEXT_DOMAIN ),
+		'subMenu'          => __( 'Submenu', genesis_get_theme_handle() ),
 		'subMenuIconClass' => 'dashicons-before dashicons-arrow-down-alt2',
 		'menuClasses'      => array(
 			'combine' => array(

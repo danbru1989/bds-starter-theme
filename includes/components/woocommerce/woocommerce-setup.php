@@ -36,7 +36,7 @@ function genesis_sample_products_match_height() {
 		'genesis-sample-match-height',
 		get_stylesheet_directory_uri() . '/js/jquery.matchHeight.min.js',
 		array( 'jquery' ),
-		CHILD_THEME_VERSION,
+		genesis_get_theme_version(),
 		true
 	);
 	wp_add_inline_script(
