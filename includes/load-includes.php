@@ -34,7 +34,6 @@ function load_non_admin_files() {
 		'components/navigation.php',
 		'components/comments.php',
 		'components/author-box.php',
-		'components/footer.php',
 	);
 
 	load_specified_files( $filenames );
