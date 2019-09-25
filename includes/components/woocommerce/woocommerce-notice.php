@@ -52,7 +52,7 @@ function genesis_sample_woocommerce_theme_notice() {
 	}
 
 	/* translators: %s: child theme name */
-	$notice_html = sprintf( __( 'Please install and activate <a href="https://wordpress.org/plugins/genesis-connect-woocommerce/" target="_blank">Genesis Connect for WooCommerce</a> to <strong>enable WooCommerce support for %s</strong>.', genesis_get_theme_handle() ), esc_html( CHILD_THEME_NAME ) );
+	$notice_html = sprintf( __( 'Please install and activate <a href="https://wordpress.org/plugins/genesis-connect-woocommerce/" target="_blank">Genesis Connect for WooCommerce</a> to <strong>enable WooCommerce support for %s</strong>.', CHILD_THEME_TEXT_DOMAIN ), esc_html( CHILD_THEME_NAME ) );
 
 	if ( current_user_can( 'install_plugins' ) ) {
 		$plugin_slug  = 'genesis-connect-woocommerce';
@@ -69,11 +69,11 @@ function genesis_sample_woocommerce_theme_notice() {
 				),
 				'install-plugin_' . $plugin_slug
 			),
-			__( 'install and activate Genesis Connect for WooCommerce', 'genesis_get_theme_handle()' )
+			__( 'install and activate Genesis Connect for WooCommerce', 'CHILD_THEME_TEXT_DOMAIN' )
 		);
 
 		/* translators: 1: plugin install prompt presented as link, 2: child theme name */
-		$notice_html = sprintf( __( 'Please %1$s to <strong>enable WooCommerce support for %2$s</strong>.', 'genesis_get_theme_handle()' ), $install_link, esc_html( CHILD_THEME_NAME ) );
+		$notice_html = sprintf( __( 'Please %1$s to <strong>enable WooCommerce support for %2$s</strong>.', 'CHILD_THEME_TEXT_DOMAIN' ), $install_link, esc_html( CHILD_THEME_NAME ) );
 	}
 
 	echo '<div class="notice notice-info is-dismissible genesis-sample-woocommerce-notice"><p>' . wp_kses_post( $notice_html ) . '</p></div>';

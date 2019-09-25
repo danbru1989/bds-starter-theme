@@ -39,8 +39,8 @@ function register_with_customizer() {
 			$wp_customize,
 			$prefix . '_link_color',
 			array(
-				'description' => __( 'Change the default color for linked titles, menu links, post info links and more.', genesis_get_theme_handle() ),
-				'label'       => __( 'Link Color', genesis_get_theme_handle() ),
+				'description' => __( 'Change the default color for linked titles, menu links, post info links and more.', CHILD_THEME_TEXT_DOMAIN ),
+				'label'       => __( 'Link Color', CHILD_THEME_TEXT_DOMAIN ),
 				'section'     => 'colors',
 				'settings'    => $prefix . '_link_color',
 			)
@@ -60,8 +60,8 @@ function register_with_customizer() {
 			$wp_customize,
 			$prefix . '_accent_color',
 			array(
-				'description' => __( 'Change the default hover color for button links, the menu button, and submit buttons. This setting does not apply to buttons created with the Buttons block.', genesis_get_theme_handle() ),
-				'label'       => __( 'Accent Color', genesis_get_theme_handle() ),
+				'description' => __( 'Change the default hover color for button links, the menu button, and submit buttons. This setting does not apply to buttons created with the Buttons block.', CHILD_THEME_TEXT_DOMAIN ),
+				'label'       => __( 'Accent Color', CHILD_THEME_TEXT_DOMAIN ),
 				'section'     => 'colors',
 				'settings'    => $prefix . '_accent_color',
 			)
@@ -80,8 +80,8 @@ function register_with_customizer() {
 	$wp_customize->add_control(
 		$prefix . '_logo_width',
 		array(
-			'label'       => __( 'Logo Width', genesis_get_theme_handle() ),
-			'description' => __( 'The maximum width of the logo in pixels.', genesis_get_theme_handle() ),
+			'label'       => __( 'Logo Width', CHILD_THEME_TEXT_DOMAIN ),
+			'description' => __( 'The maximum width of the logo in pixels.', CHILD_THEME_TEXT_DOMAIN ),
 			'priority'    => 9,
 			'section'     => 'title_tagline',
 			'settings'    => $prefix . '_logo_width',

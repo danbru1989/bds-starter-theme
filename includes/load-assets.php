@@ -22,7 +22,7 @@ add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\enqueue_assets' );
 function enqueue_assets() {
 
 	wp_enqueue_style(
-		genesis_get_theme_handle() . '-fonts',
+		CHILD_THEME_TEXT_DOMAIN . '-fonts',
 		'//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700|Roboto+Slab:400,700',
 		array(),
 		genesis_get_theme_version()
@@ -33,7 +33,7 @@ function enqueue_assets() {
 	wp_enqueue_style( 'font-awesome', 'https://use.fontawesome.com/releases/v5.6.3/css/all.css', array(), genesis_get_theme_version() );
 
 	wp_enqueue_style(
-		genesis_get_theme_handle() . '-styles',
+		CHILD_THEME_TEXT_DOMAIN . '-styles',
 		CHILD_URL . '/assets/css/main.css',
 		array(),
 		genesis_get_theme_version()
@@ -55,7 +55,7 @@ function enqueue_assets() {
 	);
 
 	wp_enqueue_script(
-		genesis_get_theme_handle() . '-scripts',
+		CHILD_THEME_TEXT_DOMAIN . '-scripts',
 		CHILD_URL . '/assets/js/main.js',
 		array( 'jquery' ),
 		genesis_get_theme_version(),
@@ -75,7 +75,7 @@ add_action( 'admin_enqueue_scripts', __NAMESPACE__ . '\enqueue_admin_assets' );
 function enqueue_admin_assets() {
 
 	wp_enqueue_style(
-		genesis_get_theme_handle() . '-admin-styles',
+		CHILD_THEME_TEXT_DOMAIN . '-admin-styles',
 		CHILD_URL . '/assets/css/admin.css',
 		array(),
 		genesis_get_theme_version()
