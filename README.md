@@ -3,6 +3,8 @@
 This is the custom Genesis starter theme for Brubaker Design Services. It provides a modular file structure and SASS partials for quick Wordpress developement. The Genesis Sample theme provided the foundation for this starter theme.
 
 ## Change Log
+1.1.7 – Added "select" form field focus styles.
+
 1.1.6 – Created Text Domain constant.
 
 1.1.5 – Removed footer.php because it is no longer needed. Genesis 3.1 adds footer text editing to Customizer.
