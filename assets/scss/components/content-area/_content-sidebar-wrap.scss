@@ -36,6 +36,6 @@
 	}
 
 	.full-width-content & {
-		grid-template-columns: minmax(1fr, $content-sidebar-wrap--max-width);
+		grid-template-columns: none;
 	}
 }
