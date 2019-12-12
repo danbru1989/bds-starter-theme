@@ -174,21 +174,6 @@ function delayed_genesis_modifications() {
 
 add_action( 'genesis_site_title', 'the_custom_logo', 0 );
 
-add_action( 'genesis_theme_settings_metaboxes', __NAMESPACE__ . '\remove_metaboxes' );
-/**
- * Removes output of unused admin settings metaboxes.
- *
- * @since 1.0.0
- *
- * @param string $_genesis_admin_settings The admin screen to remove meta boxes from.
- */
-function remove_metaboxes( $_genesis_admin_settings ) {
-	remove_meta_box( 'genesis-theme-settings-header', $_genesis_admin_settings, 'main' );
-	remove_meta_box( 'genesis-theme-settings-nav', $_genesis_admin_settings, 'main' );
-	remove_meta_box( 'genesis-theme-settings-blogpage', $_genesis_admin_settings, 'main' );
-	remove_meta_box( 'genesis-theme-settings-adsense', $_genesis_admin_settings, 'main' );
-}
-
 /**
  * Defines responsive menu settings.
  *
