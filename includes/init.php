@@ -25,7 +25,6 @@ function init_constants() {
 	define( 'CHILD_THEME_NAME', $child_theme->get( 'Name' ) );
 	define( 'CHILD_THEME_URL', $child_theme->get( 'ThemeURI' ) );
 	define( 'CHILD_THEME_DIR', get_stylesheet_directory() );
-	define( 'CHILD_THEME_TEXT_DOMAIN', $child_theme->stylesheet );
 }
 
 init_constants();

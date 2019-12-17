@@ -7,5 +7,4 @@
 	width: 100%;
 	box-shadow: 0 0 10px $color--shadow;
 	z-index: 100;
-	@include media(ml) {position: fixed;}
 }

@@ -11,7 +11,7 @@
 
 namespace BrubakerDesignServices\BDSStarterTheme;
 
-load_non_admin_files();
+load_files();
 /**
  * Loads non-admin files
  *
@@ -19,39 +19,16 @@ load_non_admin_files();
  *
  * @return void
  */
-function load_non_admin_files() {
+function load_files() {
 	$filenames = array(
 		'setup.php',
 		'load-assets.php',
 
-		'components/customizer/css-handler.php',
-		'components/customizer/helper-functions.php',
-		'components/gutenberg/init.php',
-		'components/woocommerce/woocommerce-setup.php',
-		'components/woocommerce/woocommerce-output.php',
-		'components/woocommerce/woocommerce-notice.php',
-		'components/simple-social-icons/simple-social-icons.php',
+		'components/woocommerce/setup.php',
+		'components/woocommerce/archive-product.php',
+		'components/woocommerce/single-product.php',
+
 		'components/navigation.php',
-		'components/comments.php',
-		'components/author-box.php',
-	);
-
-	load_specified_files( $filenames );
-}
-
-
-
-add_action( 'admin_init', __NAMESPACE__ . '\load_admin_files' );
-/**
- * Load admin files
- *
- * @since 1.0.0
- *
- * @return void
- */
-function load_admin_files() {
-	$filenames = array(
-		'components/customizer/customizer.php',
 	);
 
 	load_specified_files( $filenames );
