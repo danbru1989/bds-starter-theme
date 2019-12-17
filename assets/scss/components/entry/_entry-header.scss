@@ -19,7 +19,7 @@
 // Post Headers.
 .post .entry-header {
 	
-	.entry-title a {
+	.entry-title .entry-title-link {
 		color: $color--text-dark;
 		&:focus, &:hover {
 			color: $color--link-dark-hover;
