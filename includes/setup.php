@@ -76,19 +76,29 @@ function configure_theme_supports() {
 		'disable-custom-font-sizes'       => null,
 		'editor-color-palette'            => array(
 			array(
-				'name'  => __( 'White', genesis_get_theme_handle() ),
-				'slug'  => 'white',
-				'color' => '#ffffff',
+				'name'  => __( 'Blue', genesis_get_theme_handle() ),
+				'slug'  => 'primary',
+				'color' => 'rgb(60, 150, 210)',
 			),
 			array(
 				'name'  => __( 'Grey', genesis_get_theme_handle() ),
-				'slug'  => 'grey',
-				'color' => '#bebebe',
+				'slug'  => 'secondary',
+				'color' => 'rgb(190,190,190)',
+			),
+			array(
+				'name'  => __( 'Light Red', genesis_get_theme_handle() ),
+				'slug'  => 'tertiary',
+				'color' => 'rgb(205,139,118)',
+			),
+			array(
+				'name'  => __( 'Light Grey', genesis_get_theme_handle() ),
+				'slug'  => 'quaternary',
+				'color' => 'rgb(240,240,240)',
 			),
 			array(
 				'name'  => __( 'Black', genesis_get_theme_handle() ),
-				'slug'  => 'black',
-				'color' => '#303030',
+				'slug'  => 'quinary',
+				'color' => 'rgb(48,48,48)',
 			),
 		),
 		'editor-font-sizes'               => array(

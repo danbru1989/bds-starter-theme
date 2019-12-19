@@ -3,7 +3,7 @@
 
 // Descriptive Color Variables
 
-    $blue             : rgb(60,150,210);
+    $blue             : rgb(60, 150, 210);
     $light-red        : rgb(205,139,118);
     $light-grey       : rgb(240,240,240);
 
@@ -36,6 +36,8 @@
 
 // Gutenberg Color Pallette Array
 
-    $colors:    ( white,    $white      ),
-                ( grey,     $grey       ),
-                ( black,    $black      );
+    $colors:    ( primary,     $blue       ),
+                ( secondary,   $grey       ),
+                ( tertiary,    $light-red  ),
+                ( quaternary,  $light-grey ),
+                ( quinary,     $black      );
