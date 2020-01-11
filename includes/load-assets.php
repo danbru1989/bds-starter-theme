@@ -42,7 +42,7 @@ function enqueue_assets() {
 	$suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
 	wp_enqueue_script(
 		'genesis-sample-responsive-menu',
-		CHILD_URL . "/assets/js/responsive-menus{$suffix}.js",
+		CHILD_URL . '/assets/js/responsive-menus.js',
 		array( 'jquery' ),
 		genesis_get_theme_version(),
 		true

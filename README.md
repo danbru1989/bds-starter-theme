@@ -3,6 +3,8 @@
 This is the custom Genesis starter theme for Brubaker Design Services. It provides a modular file structure and SASS partials for quick Wordpress developement. The Genesis Sample theme provided the foundation for this starter theme.
 
 ## Change Log
+2.1.1 – Fixed js suffix problem.
+
 2.1.0 – Added better color palette.
 
 2.0.0 – Cleaned up unnessesary code and reorganized modulation.
