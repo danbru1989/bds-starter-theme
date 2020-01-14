@@ -58,13 +58,19 @@
 			&:focus {}
 		}
 
-		// Hover and focus. (Must use mixin to properly apply styles. This allows for the sfHover styles to only be applied on desktop screens.)
-		@mixin menu-item-hover-effects {
-			color: $color--link-dark-hover;
-			background: $color--quaternary;
+		// Top Level Menu Item Effects.
+		.genesis-nav-menu > .menu-item > a:hover,
+		.genesis-nav-menu > .menu-item > a:focus {
+			color: $color--link-light-hover;
+			background: transparent;
 		}
 
-		.menu-item a:hover,
-		.menu-item a:focus {@include menu-item-hover-effects;}
-		@include media($navigation__breakpoint) {.menu-item.sfHover > a {@include menu-item-hover-effects;}}
+		// Sub Level Menu Item Effects.
+		.sub-menu > .menu-item > a:hover,
+		.sub-menu > .menu-item > a:focus {}
+
+		// Persistent Menu Item Effects. (Desktop only)
+		@include media($navigation__breakpoint) {
+			.menu-item.sfHover > a {}
+		}
 }
