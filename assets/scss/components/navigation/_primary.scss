@@ -71,6 +71,8 @@
 
 		// Persistent Menu Item Effects. (Desktop only)
 		@include media($navigation__breakpoint) {
-			.menu-item.sfHover > a {}
+			.genesis-nav-menu > .menu-item.sfHover > a {}
+
+			.sub-menu > .menu-item.sfHover > a {}
 		}
 }
