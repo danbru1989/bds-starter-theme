@@ -1,6 +1,10 @@
 // ========== Base ========== //
 
 
+// Navigation Settings.
+$navigation__breakpoint         : l;
+$navigation__sub-menu--width    : 200px;
+
 
 .genesis-nav-menu {
 	display: flex;
@@ -21,7 +25,6 @@
 		a {
 			flex: 1;
 			outline-offset: -1px;
-			padding: 15px;
 			text-decoration: none !important;
 		}
 	}
@@ -32,6 +35,7 @@
 		left: -9999px;
 		opacity: 1;
 		padding-left: $mobile-spacing;
+		width: $navigation__sub-menu--width;
 		z-index: 99;
 
 		@include media($navigation__breakpoint) {

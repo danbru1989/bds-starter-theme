@@ -13,7 +13,7 @@
 		@include media($navigation__breakpoint) {
 			left: 0;
 			.sub-menu {
-				left: $navigation__nav-primary-sub-menu--width;
+				left: $navigation__sub-menu--width;
 				box-shadow: 1px 1px 2px $color--shadow;
 			}	
 		}	
