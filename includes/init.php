@@ -1,6 +1,6 @@
 <?php
 /**
- * Initialize BDS Starter Theme's constants.
+ * Initialize theme's constants.
  *
  * @package BrubakerDesignServices\BDSStarterTheme
  * @since   1.0.0
