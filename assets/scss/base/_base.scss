@@ -1,17 +1,11 @@
 // ========== Body ========== //
 
-html {
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-font-smoothing: antialiased;
-}
-
 body {
 	background-color: $body--background-color;
 	color: $color--text-dark;
 	font-family: $font-stack--primary;
 	font-size: $body--font-size;
 	line-height: $body--line-height;
-	overflow-x: hidden;
 }
 
 a {
@@ -23,7 +17,5 @@ a {
 		text-decoration: underline;
 	}
 }
-
-em, i {font-style: italic;}
 
 img {height: auto;}

@@ -61,18 +61,23 @@
 		// Top Level Menu Item Effects.
 		.genesis-nav-menu > .menu-item > a:hover,
 		.genesis-nav-menu > .menu-item > a:focus {
-			color: $color--link-light-hover;
-			background: transparent;
+			background: $color--secondary;
 		}
 
 		// Sub Level Menu Item Effects.
 		.sub-menu > .menu-item > a:hover,
-		.sub-menu > .menu-item > a:focus {}
+		.sub-menu > .menu-item > a:focus {
+			background: $color--secondary;
+		}
 
 		// Persistent Menu Item Effects. (Desktop only)
 		@include media($navigation__breakpoint) {
-			.genesis-nav-menu > .menu-item.sfHover > a {}
+			.genesis-nav-menu > .menu-item.sfHover > a {
+				background: $color--secondary;
+			}
 
-			.sub-menu > .menu-item.sfHover > a {}
+			.sub-menu > .menu-item.sfHover > a {
+				background: $color--secondary;
+			}
 		}
 }

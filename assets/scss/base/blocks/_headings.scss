@@ -2,24 +2,23 @@
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: $font-stack--secondary;
-	font-weight: 700;
+	font-weight: bold;
 	line-height: 1.5;
+	margin: 0 0 $mobile-spacing - 5px;
 }
 
-.entry-content {h1, h2, h3, h4, h5, h6 {margin: 0;}}
-
-h1 {font-size: 30px;}
-h2 {font-size: 28px;}
-h3 {font-size: 24px;}
+h1 {font-size: 32px;}
+h2 {font-size: 26px;}
+h3 {font-size: 22px;}
 h4 {font-size: 20px;}
-h5 {font-size: 18px;}
-h6 {font-size: 16px;}
+h5 {font-size: 19px;}
+h6 {font-size: 18px;}
 
 @include media(ml) {
-	h1 {font-size: 40px;}
-	h2 {font-size: 38px;}
-	h3 {font-size: 34px;}
+	h1 {font-size: 42px;}
+	h2 {font-size: 36px;}
+	h3 {font-size: 32px;}
 	h4 {font-size: 30px;}
-	h5 {font-size: 28px;}
-	h6 {font-size: 26px;}
+	h5 {font-size: 29px;}
+	h6 {font-size: 28px;}
 }

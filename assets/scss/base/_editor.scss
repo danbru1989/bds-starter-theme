@@ -1,13 +1,10 @@
-// ========== Admin Styles SCSS ========== //
-
-@import 'utilities/index';
-@import 'base/color-palette';
-@import 'base/font-sizes';
-
-
+// ========== Gutenburg Editor Styles ========== //
 
 .editor-post-title__block.wp-block {
 	max-width: $content--max-width;
+
+	// Change post title styles.
+	.editor-post-title__input {}
 }
 
 .wp-block {

@@ -1,8 +1,8 @@
 // ========== Entry Content ========== //
 
 .entry-content > * {
-	@include space(margin, b);
-	max-width: 100%;
+	// max-width: 100%;
+	// margin-bottom: $desktop-spacing;
 
 	&:last-child {
 		margin-bottom: 0;

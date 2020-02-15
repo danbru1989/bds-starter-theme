@@ -2,6 +2,7 @@
 
 
 
+// Builds Gutenburg Color Palettes.
 @each $name, $color in $colors {
 
 	.has-#{$name}-color {

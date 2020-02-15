@@ -40,10 +40,13 @@
 	@include media(ms) {max-width: calc(65%);}
 }
 
-.full-width-content, .nolayout {
 
-	.alignwide,
-	.entry-content > *.alignwide {
+
+// ===== Wide & Full Alignments ===== //
+.full-width-content,
+.nolayout {
+
+	.alignwide {
 		margin: $mobile-spacing calc(50% - 50vw);
 		max-width: 100vw;
 		width: auto;
@@ -51,8 +54,7 @@
 		@include media(l) {margin: $desktop-spacing calc(25% - 25vw);}
 	}
 
-	.alignfull,
-	.entry-content > *.alignfull {
+	.alignfull {
 		margin: $mobile-spacing calc(50% - 50vw);
 		max-width: 100vw;
 		width: 100vw;

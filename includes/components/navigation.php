@@ -11,9 +11,11 @@
 
 namespace BrubakerDesignServices\BDSStarterTheme;
 
-add_action( 'genesis_header', 'genesis_do_nav', 12 );
+/**
+ * Output navigation inside the site header.
+ */
+add_action( 'genesis_header', 'genesis_do_nav', 15 );
 
-add_filter( 'wp_nav_menu_args', __NAMESPACE__ . '\secondary_menu_args' );
 /**
  * Reduces secondary navigation menu to one level depth.
  *
@@ -22,12 +24,14 @@ add_filter( 'wp_nav_menu_args', __NAMESPACE__ . '\secondary_menu_args' );
  * @param  array $args Original menu options.
  * @return array Menu options with depth set to 1.
  */
-function secondary_menu_args( $args ) {
-	if ( 'secondary' !== $args['theme_location'] ) {
+add_filter(
+	'wp_nav_menu_args',
+	function( $args ) {
+		if ( 'secondary' !== $args['theme_location'] ) {
+			return $args;
+		}
+
+		$args['depth'] = 1;
 		return $args;
 	}
-
-	$args['depth'] = 1;
-	return $args;
-
-}
+);

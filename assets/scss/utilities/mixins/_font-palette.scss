@@ -1,7 +1,8 @@
-// ========== Font Sizes ========== //
+// ========== Font Palette ========== //
 
 
 
+// Builds Gutenburg Font Sizes.
 @each $name, $font-size in $font-sizes {
 
 	.has-#{$name}-font-size {

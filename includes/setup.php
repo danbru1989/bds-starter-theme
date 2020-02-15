@@ -11,7 +11,6 @@
 
 namespace BrubakerDesignServices\BDSStarterTheme;
 
-add_action( 'genesis_setup', __NAMESPACE__ . '\setup_child_theme', 15 );
 /**
  * Setup child theme. This loads after Genesis with a priority of 15.
  *
@@ -19,15 +18,20 @@ add_action( 'genesis_setup', __NAMESPACE__ . '\setup_child_theme', 15 );
  *
  * @return void
  */
-function setup_child_theme() {
-	// Set Localization (do not remove).
-	load_child_theme_textdomain( genesis_get_theme_handle(), apply_filters( 'child_theme_textdomain', CHILD_THEME_DIR . '/assets/languages', genesis_get_theme_handle() ) );
+add_action(
+	'genesis_setup',
+	function() {
 
-	configure_theme_supports();
-	configure_image_sizes();
+		// Set Localization (do not remove).
+		load_child_theme_textdomain( genesis_get_theme_handle(), apply_filters( 'child_theme_textdomain', CHILD_THEME_DIR . '/assets/languages', genesis_get_theme_handle() ) );
 
-	delayed_genesis_modifications();
-}
+		configure_theme_supports();
+		configure_image_sizes();
+
+		delayed_genesis_modifications();
+	},
+	15
+);
 
 /**
  * Configure theme supports
@@ -53,7 +57,6 @@ function configure_theme_supports() {
 			'skip-links',
 		),
 		'genesis-structural-wraps'        => array(
-			'header',
 			'footer-widgets',
 		),
 		'genesis-custom-logo'             => array(
@@ -81,14 +84,14 @@ function configure_theme_supports() {
 				'color' => 'rgb(60, 150, 210)',
 			),
 			array(
-				'name'  => __( 'Grey', genesis_get_theme_handle() ),
+				'name'  => __( 'Orange', genesis_get_theme_handle() ),
 				'slug'  => 'secondary',
-				'color' => 'rgb(190,190,190)',
+				'color' => 'rgb(235,125,60)',
 			),
 			array(
-				'name'  => __( 'Light Red', genesis_get_theme_handle() ),
+				'name'  => __( 'White', genesis_get_theme_handle() ),
 				'slug'  => 'tertiary',
-				'color' => 'rgb(205,139,118)',
+				'color' => 'rgb(255,255,255)',
 			),
 			array(
 				'name'  => __( 'Light Grey', genesis_get_theme_handle() ),
@@ -96,8 +99,13 @@ function configure_theme_supports() {
 				'color' => 'rgb(240,240,240)',
 			),
 			array(
-				'name'  => __( 'Black', genesis_get_theme_handle() ),
+				'name'  => __( 'Grey', genesis_get_theme_handle() ),
 				'slug'  => 'quinary',
+				'color' => 'rgb(190,190,190)',
+			),
+			array(
+				'name'  => __( 'Black', genesis_get_theme_handle() ),
+				'slug'  => 'senary',
 				'color' => 'rgb(48,48,48)',
 			),
 		),
@@ -176,6 +184,7 @@ function delayed_genesis_modifications() {
 	genesis_unregister_layout( 'sidebar-sidebar-content' );
 
 	unregister_sidebar( 'header-right' );
+	// unregister_sidebar( 'sidebar' );
 	unregister_sidebar( 'sidebar-alt' );
 }
 
@@ -202,7 +211,6 @@ function genesis_sample_responsive_menu_settings() {
 
 }
 
-add_filter( 'body_class', __NAMESPACE__ . '\add_page_body_class' );
 /**
  * Adds body class on pages.
  *
@@ -210,12 +218,15 @@ add_filter( 'body_class', __NAMESPACE__ . '\add_page_body_class' );
  *
  * return array Body classes.
  */
-function add_page_body_class( $classes ) {
-	if ( is_page() ) {
-		global $post;
+add_filter(
+	'body_class',
+	function( $classes ) {
+		if ( is_page() ) {
+			global $post;
 
-		$classes[] = $post->post_name . '-page';
+			$classes[] = $post->post_name . '-page';
+		}
+
+		return $classes;
 	}
-
-	return $classes;
-}
+);

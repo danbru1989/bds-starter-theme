@@ -1,6 +1,16 @@
 // ========== Paragraphs ========== //
 
 p {
+	line-height: $body__line-height !important;
 	margin: 0 0 $desktop-spacing;
-	padding: 0;
+
+	&.has-background {
+		padding: $mobile-spacing - 5px $mobile-spacing;
+		@include media(ms) {padding: $desktop-spacing - 10px $desktop-spacing;}
+	}
+
+	&.has-drop-cap:not(:focus):first-letter {
+		font-size: 4.5em;
+		font-weight: normal;
+	}
 }

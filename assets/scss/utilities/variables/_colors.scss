@@ -3,11 +3,10 @@
 
 // Descriptive Color Variables
 
-    $blue             : rgb(60, 150, 210);
-    $light-red        : rgb(205,139,118);
-    $light-grey       : rgb(240,240,240);
-
+    $blue             : rgb(60,150,210);
+    $orange           : rgb(235,125,60);
     $white            : rgb(255,255,255);
+    $light-grey       : rgb(240,240,240);
     $grey             : rgb(190,190,190);
     $black            : rgb(48,48,48);
     $stock-green      : rgb(100,200,0);
@@ -16,8 +15,8 @@
 // Functional Color Variables
 
     $color--primary             : $blue;
-    $color--secondary           : $grey;
-    $color--tertiary            : $light-red;
+    $color--secondary           : $orange;
+    $color--tertiary            : $white;
     $color--quaternary          : $light-grey;
     $color--quinary             : $black;
     
@@ -37,7 +36,8 @@
 // Gutenberg Color Pallette Array
 
     $colors:    ( primary,     $blue       ),
-                ( secondary,   $grey       ),
-                ( tertiary,    $light-red  ),
+                ( secondary,   $orange     ),
+                ( tertiary,    $white      ),
                 ( quaternary,  $light-grey ),
-                ( quinary,     $black      );
+                ( quinary,     $grey       ),
+                ( senary,      $black      );
