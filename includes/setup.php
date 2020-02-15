@@ -66,8 +66,8 @@ function configure_theme_supports() {
 			'flex-width'  => true,
 		),
 		'genesis-menus'                   => array(
-			'primary'   => __( 'Main Menu', genesis_get_theme_handle() ),
-			'secondary' => __( 'Footer Menu', genesis_get_theme_handle() ),
+			'primary'   => __( 'Main Menu', genesis_get_theme_handle() ), //phpcs:ignore
+			'secondary' => __( 'Footer Menu', genesis_get_theme_handle() ), //phpcs:ignore
 		),
 		'genesis-responsive-viewport'     => null,
 		'genesis-after-entry-widget-area' => null,
@@ -79,54 +79,54 @@ function configure_theme_supports() {
 		'disable-custom-font-sizes'       => null,
 		'editor-color-palette'            => array(
 			array(
-				'name'  => __( 'Blue', genesis_get_theme_handle() ),
+				'name'  => __( 'Blue', genesis_get_theme_handle() ), //phpcs:ignore
 				'slug'  => 'primary',
 				'color' => 'rgb(60, 150, 210)',
 			),
 			array(
-				'name'  => __( 'Orange', genesis_get_theme_handle() ),
+				'name'  => __( 'Orange', genesis_get_theme_handle() ), //phpcs:ignore
 				'slug'  => 'secondary',
 				'color' => 'rgb(235,125,60)',
 			),
 			array(
-				'name'  => __( 'White', genesis_get_theme_handle() ),
+				'name'  => __( 'White', genesis_get_theme_handle() ), //phpcs:ignore
 				'slug'  => 'tertiary',
 				'color' => 'rgb(255,255,255)',
 			),
 			array(
-				'name'  => __( 'Light Grey', genesis_get_theme_handle() ),
+				'name'  => __( 'Light Grey', genesis_get_theme_handle() ), //phpcs:ignore
 				'slug'  => 'quaternary',
 				'color' => 'rgb(240,240,240)',
 			),
 			array(
-				'name'  => __( 'Grey', genesis_get_theme_handle() ),
+				'name'  => __( 'Grey', genesis_get_theme_handle() ), //phpcs:ignore
 				'slug'  => 'quinary',
 				'color' => 'rgb(190,190,190)',
 			),
 			array(
-				'name'  => __( 'Black', genesis_get_theme_handle() ),
+				'name'  => __( 'Black', genesis_get_theme_handle() ), //phpcs:ignore
 				'slug'  => 'senary',
 				'color' => 'rgb(48,48,48)',
 			),
 		),
 		'editor-font-sizes'               => array(
 			array(
-				'name' => __( 'Small', genesis_get_theme_handle() ),
+				'name' => __( 'Small', genesis_get_theme_handle() ), //phpcs:ignore
 				'slug' => 'small',
 				'size' => 14,
 			),
 			array(
-				'name' => __( 'Normal', genesis_get_theme_handle() ),
+				'name' => __( 'Normal', genesis_get_theme_handle() ), //phpcs:ignore
 				'slug' => 'normal',
 				'size' => 18,
 			),
 			array(
-				'name' => __( 'Large', genesis_get_theme_handle() ),
+				'name' => __( 'Large', genesis_get_theme_handle() ), //phpcs:ignore
 				'slug' => 'large',
 				'size' => 24,
 			),
 			array(
-				'name' => __( 'Largest', genesis_get_theme_handle() ),
+				'name' => __( 'Largest', genesis_get_theme_handle() ), //phpcs:ignore
 				'slug' => 'largest',
 				'size' => 32,
 			),
@@ -184,6 +184,7 @@ function delayed_genesis_modifications() {
 	genesis_unregister_layout( 'sidebar-sidebar-content' );
 
 	unregister_sidebar( 'header-right' );
+	//phpcs:ignore
 	// unregister_sidebar( 'sidebar' );
 	unregister_sidebar( 'sidebar-alt' );
 }
@@ -195,9 +196,9 @@ function delayed_genesis_modifications() {
  */
 function genesis_sample_responsive_menu_settings() {
 	$settings = array(
-		'mainMenu'         => __( 'Menu', genesis_get_theme_handle() ),
+		'mainMenu'         => __( 'Menu', genesis_get_theme_handle() ), //phpcs:ignore
 		'menuIconClass'    => 'dashicons-before dashicons-menu',
-		'subMenu'          => __( 'Submenu', genesis_get_theme_handle() ),
+		'subMenu'          => __( 'Submenu', genesis_get_theme_handle() ), //phpcs:ignore
 		'subMenuIconClass' => 'dashicons-before dashicons-arrow-down-alt2',
 		'menuClasses'      => array(
 			'combine' => array(
