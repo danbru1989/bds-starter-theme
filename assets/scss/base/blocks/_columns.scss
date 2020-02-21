@@ -1,0 +1,16 @@
+// ========== Columns ========== //
+
+.wp-block-columns {
+    justify-content: center;
+
+    .wp-block-column {
+		margin-left: 0;
+		@include media(ms) {
+			padding-right: 15px;
+			padding-left: 15px;
+			&:first-of-type {padding-left: 0;}
+			&:last-of-type {padding-right: 0;}
+		}
+		
+    }
+}
