@@ -77,7 +77,7 @@ Standard mobile and desktop margin on bottom side
 #### .margin-l
 Standard mobile and desktop margin on left side
 
-## Utility Mixins and Extends
+## Utility Mixins & Extends
 #### @include clearfix;
 Clearfix floated element
 #### @include media(ml) {};
