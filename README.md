@@ -38,9 +38,10 @@ This is the custom Genesis starter theme for Brubaker Design Services. It provid
 1.0.0 – Initial Launch.
 
 ## Utility Classes
-.clearfix               – clearfix floated element
-
-.no-body-margin         – remove the content-sidebar-wrap top and bottom margins
+#### .clearfix
+Clearfix floated element
+#### .no-body-margin
+Remove the content-sidebar-wrap top and bottom margins
 .no-top-body-margin     – remove the content-sidebar-wrap top margin
 .no-bottom-body-margin  – remove the content-sidebar-wrap bottom margin
 
