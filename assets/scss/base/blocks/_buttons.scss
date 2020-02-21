@@ -1,0 +1,87 @@
+// ========== Buttons ========== //
+
+// Default button styles.
+%button-styles {
+	color: $color--text-light;
+	background-color: $color--primary;
+	font-weight: normal;
+	text-decoration: none !important;
+	padding: 15px 30px;
+	border-color: transparent;
+	border-radius: 5px;
+	&:focus, &:hover {
+		color: $color--text-light;
+		background-color: lighten($color--primary, 10%);
+	}
+}
+
+.wp-block-button__link {
+	@extend %button-styles;
+	@extend %transition;
+
+	&:not(.has-text-color) {
+		color: $color--text-light;
+
+		&:hover, &:focus {color: $color--text-light;}
+	}
+
+	&:not(.has-background) {
+		background-color: $color--primary;
+
+		&:hover, &:focus {background-color: lighten($color--primary, 10%);}
+	}
+
+	@each $name, $color in $colors {
+
+		&.has-#{$name}-color {
+			color: $color;
+		}
+	
+		&.has-#{$name}-background-color {
+			background-color: $color;
+
+			&:hover, &:focus {background-color: lighten($color, 10%);}
+		}
+	}
+
+
+	.is-style-outline & {
+	
+		&:not(.has-text-color) {
+			color: $color--primary;
+	
+			&:hover, &:focus {color: lighten($color--primary, 20%);}
+		}
+	
+		&:not(.has-background) {
+			background-color: transparent;
+			border-color: $color--primary;
+	
+			&:hover, &:focus {
+				background-color: transparent;
+				border-color: lighten($color--primary, 20%);
+			}
+		}
+	
+		@each $name, $color in $colors {
+	
+			&.has-#{$name}-color {
+				color: $color;
+
+				&:hover, &:focus {
+					color: lighten($color, 20%) !important;
+				}
+			}
+		
+			&.has-#{$name}-background-color {
+				background-color: transparent !important;
+				border-color: $color;
+	
+				&:hover, &:focus {
+					background-color: transparent !important;
+					border-color: lighten($color, 20%);
+				}
+			}
+		}
+	}
+}

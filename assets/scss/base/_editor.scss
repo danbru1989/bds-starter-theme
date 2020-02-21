@@ -1,14 +1,14 @@
 // ========== Gutenburg Editor Styles ========== //
 
 .editor-post-title__block.wp-block {
-	max-width: $content--max-width;
+	max-width: $entry-content--max-width;
 
 	// Change post title styles.
 	.editor-post-title__input {}
 }
 
 .wp-block {
-	max-width: $content--max-width;
+	max-width: $entry-content--max-width;
 
     &[data-align="wide"] {
 		max-width: none;

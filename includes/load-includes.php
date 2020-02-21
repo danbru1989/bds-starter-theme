@@ -28,6 +28,8 @@ function load_files() {
 		'components/woocommerce/archive-product.php',
 		'components/woocommerce/single-product.php',
 
+		'components/wpforms/setup.php',
+
 		'components/navigation.php',
 	);
 

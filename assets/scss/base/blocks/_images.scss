@@ -2,17 +2,15 @@
 
 .entry-content img {max-width: 100%;}
 
-.wp-block-image,
-.alignright,
-.alignleft,
-.aligncenter {
+.wp-block-image {
+	margin: 0;
 
-	img {border-radius: 15px;}
+	img {}
 
 }
 
 .alignwide,
 .alignfull {
 
-	img {border-radius: 0;}
+	img {}
 }

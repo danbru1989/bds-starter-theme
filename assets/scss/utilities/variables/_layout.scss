@@ -9,9 +9,11 @@
 
 // ===== Site Inner Options ===== //
 
-    $content-sidebar-wrap--max-width            : 1280px; // Max Width – none, 1280px, 1100px, etc...
-    $content-sidebar-wrap--margin               : 50px auto 60px;
-    $content-sidebar-wrap--desktop-grid-gap     : 50px;
+    // Max Width – none, 1280px, 1100px, etc...
+    $content-sidebar-wrap--max-width            : 1280px; 
+    $entry-content--max-width                   : 800px;
 
-    $content--max-width                         : 800px;
-    $widgets--max-width                         : 350px;
+    // Only applied when a layout with a sidebar is used.
+    $content-sidebar-wrap--margin               : $desktop-spacing * 2 auto $desktop-spacing * 2;
+    $sidebar--max-width                         : 350px;
+    

@@ -75,3 +75,19 @@ $d : $desktop-spacing;
 		@include media(ms) {margin-left: $d;}
 	}
 }
+
+.padding-all {@include space(padding, all)};
+.padding-tb {@include space(padding, tb)};
+.padding-rl {@include space(padding, rl)};
+.padding-t {@include space(padding, t)};
+.padding-r {@include space(padding, r)};
+.padding-b {@include space(padding, b)};
+.padding-l {@include space(padding, l)};
+
+.margin-all {@include space(margin, all)};
+.margin-tb {@include space(margin, tb)};
+.margin-rl {@include space(margin, rl)};
+.margin-t {@include space(margin, t)};
+.margin-r {@include space(margin, r)};
+.margin-b {@include space(margin, b)};
+.margin-l {@include space(margin, l)};

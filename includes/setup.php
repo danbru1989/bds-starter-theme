@@ -86,27 +86,37 @@ function configure_theme_supports() {
 			array(
 				'name'  => __( 'Orange', genesis_get_theme_handle() ), //phpcs:ignore
 				'slug'  => 'secondary',
-				'color' => 'rgb(235,125,60)',
+				'color' => 'rgb(235, 125, 60)',
+			),
+			array(
+				'name'  => __( 'Light Blue', genesis_get_theme_handle() ), //phpcs:ignore
+				'slug'  => 'tertiary',
+				'color' => 'rgb(109, 161, 196)',
+			),
+			array(
+				'name'  => __( 'Light Orange', genesis_get_theme_handle() ), //phpcs:ignore
+				'slug'  => 'quaternary',
+				'color' => 'rgb(224, 167, 134)',
 			),
 			array(
 				'name'  => __( 'White', genesis_get_theme_handle() ), //phpcs:ignore
-				'slug'  => 'tertiary',
-				'color' => 'rgb(255,255,255)',
+				'slug'  => 'bds-white',
+				'color' => 'rgb(255, 255, 255)',
 			),
 			array(
 				'name'  => __( 'Light Grey', genesis_get_theme_handle() ), //phpcs:ignore
-				'slug'  => 'quaternary',
-				'color' => 'rgb(240,240,240)',
+				'slug'  => 'bds-light-grey',
+				'color' => 'rgb(240, 240, 240)',
 			),
 			array(
 				'name'  => __( 'Grey', genesis_get_theme_handle() ), //phpcs:ignore
-				'slug'  => 'quinary',
-				'color' => 'rgb(190,190,190)',
+				'slug'  => 'bds-grey',
+				'color' => 'rgb(190, 190, 190)',
 			),
 			array(
 				'name'  => __( 'Black', genesis_get_theme_handle() ), //phpcs:ignore
-				'slug'  => 'senary',
-				'color' => 'rgb(48,48,48)',
+				'slug'  => 'bds-black',
+				'color' => 'rgb(48, 48, 48)',
 			),
 		),
 		'editor-font-sizes'               => array(
@@ -184,7 +194,7 @@ function delayed_genesis_modifications() {
 	genesis_unregister_layout( 'sidebar-sidebar-content' );
 
 	unregister_sidebar( 'header-right' );
-	//phpcs:ignore
+
 	// unregister_sidebar( 'sidebar' );
 	unregister_sidebar( 'sidebar-alt' );
 }
@@ -204,7 +214,7 @@ function genesis_sample_responsive_menu_settings() {
 			'combine' => array(
 				'.nav-primary',
 			),
-			'others'  => array(),
+		'others'      => array(),
 		),
 	);
 
@@ -213,7 +223,7 @@ function genesis_sample_responsive_menu_settings() {
 }
 
 /**
- * Adds body class on pages.
+ * Adds Body classes.
  *
  * @param array $classes Body classes.
  *
@@ -221,10 +231,10 @@ function genesis_sample_responsive_menu_settings() {
  */
 add_filter(
 	'body_class',
-	function( $classes ) {
+	function ( $classes ) {
+
 		if ( is_page() ) {
 			global $post;
-
 			$classes[] = $post->post_name . '-page';
 		}
 

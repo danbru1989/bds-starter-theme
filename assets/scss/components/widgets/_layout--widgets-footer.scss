@@ -17,7 +17,7 @@
 	display: none;
 	flex-basis: 1;
 	padding: 10px $mobile-spacing;
-	max-width: $widgets--max-width;
+	max-width: $sidebar--max-width;
 	border-left: 1px solid #eee;
 	@include media(ms) {padding: 10px $desktop-spacing;}
 

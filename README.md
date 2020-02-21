@@ -36,3 +36,33 @@ This is the custom Genesis starter theme for Brubaker Design Services. It provid
 1.1.0 – Merged partials with components.
 
 1.0.0 – Initial Launch.
+
+## Utility Classes
+.clearfix               – clearfix floated element
+
+.no-body-margin         – remove the content-sidebar-wrap top and bottom margins
+.no-top-body-margin     – remove the content-sidebar-wrap top margin
+.no-bottom-body-margin  – remove the content-sidebar-wrap bottom margin
+
+.padding-all            – standard mobile and desktop padding on all sides
+.padding-tb             – standard mobile and desktop padding on top and bottom sides
+.padding-rl             – standard mobile and desktop padding on right and left sides
+.padding-t              – standard mobile and desktop padding on top side
+.padding-r              – standard mobile and desktop padding on right side
+.padding-b              – standard mobile and desktop padding on bottom side
+.padding-l              – standard mobile and desktop padding on left side
+
+.margin-all            – standard mobile and desktop margin on all sides
+.margin-tb             – standard mobile and desktop margin on top and bottom sides
+.margin-rl             – standard mobile and desktop margin on right and left sides
+.margin-t              – standard mobile and desktop margin on top side
+.margin-r              – standard mobile and desktop margin on right side
+.margin-b              – standard mobile and desktop margin on bottom side
+.margin-l              – standard mobile and desktop margin on left side
+
+## Utility Mixins and Extends
+@include clearfix;              – clearfix floated element
+@include media(ml) {};          – add media query styles to an element
+@include space(padding, all);   – add standard mobile and desktop whitespace to an element
+
+@extend %transition             – add standard theme transition effects

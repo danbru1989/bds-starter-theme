@@ -3,18 +3,41 @@
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-	margin-bottom: 40px;
 	width: 100%;
 	word-break: break-word;
+	border: 1px solid $color--text-dark;
 
-	tbody {border-bottom: 1px solid $color--text-dark;}
+	th, td {padding: 10px;}
 
 	td {
-		text-align: left;
 		border-top: 1px solid $color--text-dark;
-		padding: 10px;
+		border-right: 1px solid $color--text-dark;
+
+		.has-text-align-center {text-align: center !important;}
 	}
 	
-	th {font-weight: 700; text-align: left;}
+	th {
+		font-weight: bold;
+		border-right: 1px solid $color--text-dark;
+		.has-text-align-center {text-align: center !important;}
+	}
+
+	tfoot td {font-weight: bold;}
 }
 
+.wp-block-table {
+	margin-top: 0;
+	margin-bottom: $desktop-spacing;
+
+	&.is-style-stripes {
+
+		table {border: none;}
+		
+		th, td {
+			border-top: none;
+			border-right: none;
+		}
+	}
+
+	@include padded-wide-alignment;
+}

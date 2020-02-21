@@ -1,0 +1,8 @@
+// ========== Spacers ========== //
+
+.wp-block-spacer {
+	max-height: $desktop-spacing;
+	@include media(s) {max-height: $desktop-spacing * 2;}
+	@include media(ms) {max-height: $desktop-spacing * 3;}
+	@include media(l) {max-height: 100%;}
+}

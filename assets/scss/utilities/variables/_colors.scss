@@ -3,22 +3,24 @@
 
 // Descriptive Color Variables
 
-    $blue             : rgb(60,150,210);
-    $orange           : rgb(235,125,60);
-    $white            : rgb(255,255,255);
-    $light-grey       : rgb(240,240,240);
-    $grey             : rgb(190,190,190);
-    $black            : rgb(48,48,48);
-    $stock-green      : rgb(100,200,0);
-    $stock-red        : rgb(200,50,0);
+    $blue             : rgb(60, 150, 210);
+    $orange           : rgb(235, 125, 60);
+    $light-blue       : rgb(131, 171, 197);
+    $light-orange     : rgb(224, 167, 134);
+
+    $white            : rgb(255, 255, 255);
+    $light-grey       : rgb(240, 240, 240);
+    $grey             : rgb(190, 190, 190);
+    $black            : rgb(48, 48, 48);
+    $stock-green      : rgb(100, 200, 0);
+    $stock-red        : rgb(200, 50, 0);
 
 // Functional Color Variables
 
     $color--primary             : $blue;
     $color--secondary           : $orange;
-    $color--tertiary            : $white;
-    $color--quaternary          : $light-grey;
-    $color--quinary             : $black;
+    $color--tertiary            : $light-blue;
+    $color--quaternary          : $light-orange;
     
     $color--text-dark           : $black;
     $color--text-light          : $light-grey;
@@ -29,15 +31,17 @@
     $color--link-light          : $light-grey;
     $color--link-light-hover    : $white;
 
-    $color--shadow              : rgba(0,0,0,.4);
+    $color--shadow              : rgba(0, 0, 0, .4);
 
     $body--background-color     : $white;
 
 // Gutenberg Color Pallette Array
 
-    $colors:    ( primary,     $blue       ),
-                ( secondary,   $orange     ),
-                ( tertiary,    $white      ),
-                ( quaternary,  $light-grey ),
-                ( quinary,     $grey       ),
-                ( senary,      $black      );
+    $colors:    ( primary,         $blue         ),
+                ( secondary,       $orange       ),
+                ( tertiary,        $light-blue   ),
+                ( quaternary,      $light-orange ),
+                ( bds-white,       $white        ),
+                ( bds-light-grey,  $light-grey   ),
+                ( bds-grey,        $grey         ),
+                ( bds-black,       $black        );

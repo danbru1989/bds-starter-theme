@@ -8,6 +8,8 @@
 
 .widget {
 
+	ul, ol {margin-left: $desktop-spacing - 5px;}
+
 	ul > li {
 		margin-bottom: 15px;
 		&:last-of-type {

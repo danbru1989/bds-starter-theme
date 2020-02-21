@@ -19,7 +19,7 @@
 	grid-gap: $mobile-spacing;
 	align-items: center;
 	margin: 0 auto;
-	max-width: $widgets--max-width;
+	max-width: $sidebar--max-width;
 	@include space(padding, all);
 	@include media($navigation__breakpoint) {
 		grid-gap: $desktop-spacing;

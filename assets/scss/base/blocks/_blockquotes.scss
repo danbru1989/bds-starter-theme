@@ -1,34 +1,47 @@
 // ========== Blockquotes ========== //
 
 blockquote,
-blockquote.wp-block-quote {
+.wp-block-quote {
+	position: relative;
+	background: $light-grey;
 	font-style: italic;
-	@include space(margin, all);
-	&.is-large,
+	@include space(padding, all);
+	border-left: 5px solid $grey;
+
 	&.is-style-large {
-		@include media(ms) {margin: $desktop-spacing * 2;}
+		background: none;
+		padding-left: 50px;
+		border-left: none;
 	}
 }
 
 .wp-block-pullquote {
 	border-top: 3px solid $color--text-dark;
 	border-bottom: 3px solid $color--text-dark;
+	@include padded-wide-alignment;
 	blockquote {
+		background: none;
+		padding: 0;
 		margin-top: 0;
 		margin-bottom: 0;
+		border-left: none;
 		@include space(margin, rl);
-		&>*:last-child {margin: 0;}
+		& > *:last-child {margin: 0;}
+	}
+	&.is-style-solid-color {
+		padding: 3em 4em;
+		border: none;
+		blockquote {max-width: none;}
 	}
 }
 
-// Add Double Quote to blockquote
-.wp-block-quote::before {
-	float: left;
+// Add Double Quote to large blockquote
+.wp-block-quote.is-style-large::before {
+	position: absolute;
 	content: "\f122";
 	font-family: dashicons;
-	font-size: 30px;
-	line-height: 1.2;
-	padding-right: 10px;
+	font-size: 34px;
+	left: 0;
 }
 
 cite,
