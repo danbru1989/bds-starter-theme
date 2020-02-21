@@ -42,8 +42,10 @@ This is the custom Genesis starter theme for Brubaker Design Services. It provid
 Clearfix floated element
 #### .no-body-margin
 Remove the content-sidebar-wrap top and bottom margins
-.no-top-body-margin     – remove the content-sidebar-wrap top margin
-.no-bottom-body-margin  – remove the content-sidebar-wrap bottom margin
+##### .no-top-body-margin
+Remove the content-sidebar-wrap top margin
+##### .no-bottom-body-margin
+Remove the content-sidebar-wrap bottom margin
 
 .padding-all            – standard mobile and desktop padding on all sides
 .padding-tb             – standard mobile and desktop padding on top and bottom sides
