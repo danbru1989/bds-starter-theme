@@ -42,30 +42,48 @@ This is the custom Genesis starter theme for Brubaker Design Services. It provid
 Clearfix floated element
 #### .no-body-margin
 Remove the content-sidebar-wrap top and bottom margins
-##### .no-top-body-margin
+#### .no-top-body-margin
 Remove the content-sidebar-wrap top margin
-##### .no-bottom-body-margin
+#### .no-bottom-body-margin
 Remove the content-sidebar-wrap bottom margin
 
-.padding-all            – standard mobile and desktop padding on all sides
-.padding-tb             – standard mobile and desktop padding on top and bottom sides
-.padding-rl             – standard mobile and desktop padding on right and left sides
-.padding-t              – standard mobile and desktop padding on top side
-.padding-r              – standard mobile and desktop padding on right side
-.padding-b              – standard mobile and desktop padding on bottom side
-.padding-l              – standard mobile and desktop padding on left side
+#### .padding-all
+Standard mobile and desktop padding on all sides
+#### .padding-tb
+Standard mobile and desktop padding on top and bottom sides
+#### .padding-rl
+Standard mobile and desktop padding on right and left sides
+#### .padding-t
+Standard mobile and desktop padding on top side
+#### .padding-r
+Standard mobile and desktop padding on right side
+#### .padding-b
+Standard mobile and desktop padding on bottom side
+#### .padding-l
+Standard mobile and desktop padding on left side
 
-.margin-all            – standard mobile and desktop margin on all sides
-.margin-tb             – standard mobile and desktop margin on top and bottom sides
-.margin-rl             – standard mobile and desktop margin on right and left sides
-.margin-t              – standard mobile and desktop margin on top side
-.margin-r              – standard mobile and desktop margin on right side
-.margin-b              – standard mobile and desktop margin on bottom side
-.margin-l              – standard mobile and desktop margin on left side
+#### .margin-all
+Standard mobile and desktop margin on all sides
+#### .margin-tb
+Standard mobile and desktop margin on top and bottom sides
+#### .margin-rl
+Standard mobile and desktop margin on right and left sides
+#### .margin-t
+Standard mobile and desktop margin on top side
+#### .margin-r
+Standard mobile and desktop margin on right side
+#### .margin-b
+Standard mobile and desktop margin on bottom side
+#### .margin-l
+Standard mobile and desktop margin on left side
 
 ## Utility Mixins and Extends
-@include clearfix;              – clearfix floated element
-@include media(ml) {};          – add media query styles to an element
-@include space(padding, all);   – add standard mobile and desktop whitespace to an element
+#### @include clearfix;
+Clearfix floated element
+#### @include media(ml) {};
+Add media query styles to an element
+#### @include space(padding, all);
+Add standard mobile and desktop whitespace to an element
 
-@extend %transition             – add standard theme transition effects
+#### @extend %transition;
+Add standard theme transition effects
