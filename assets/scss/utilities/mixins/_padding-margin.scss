@@ -76,6 +76,7 @@ $d : $desktop-spacing;
 	}
 }
 
+.padding-none {padding: 0;};
 .padding-all {@include space(padding, all)};
 .padding-tb {@include space(padding, tb)};
 .padding-rl {@include space(padding, rl)};
@@ -84,6 +85,7 @@ $d : $desktop-spacing;
 .padding-b {@include space(padding, b)};
 .padding-l {@include space(padding, l)};
 
+.margin-none {margin: 0;};
 .margin-all {@include space(margin, all)};
 .margin-tb {@include space(margin, tb)};
 .margin-rl {@include space(margin, rl)};
