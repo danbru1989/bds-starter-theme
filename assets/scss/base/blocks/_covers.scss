@@ -6,6 +6,6 @@
 		margin: 0 auto;
 		max-width: $content-sidebar-wrap--max-width;
 
-		& > *:last-of-type {margin-bottom: 0;}
+		& > *:last-child {margin-bottom: 0;}
 	}
 }
