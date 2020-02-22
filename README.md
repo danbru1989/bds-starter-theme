@@ -3,6 +3,8 @@
 This is the custom Genesis starter theme for Brubaker Design Services. It provides a modular file structure and SASS partials for quick Wordpress developement. The Genesis Sample theme provided the foundation for this starter theme.
 
 ## Change Log
+3.1.4 – Added alert and notice box styles.
+
 3.1.3 – Added Media Text block styles.
 
 3.1.2 – Added .padding-none and .margin-none utility classes.
@@ -46,6 +48,11 @@ This is the custom Genesis starter theme for Brubaker Design Services. It provid
 1.0.0 – Initial Launch.
 
 ## Utility Classes
+#### .notice-box
+For adding the notice box styles to a paragraph
+#### .alert-box
+For adding the alert box styles to a paragraph
+
 #### .clearfix
 Clearfix floated element
 #### .no-margin
