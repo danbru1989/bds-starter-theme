@@ -16,6 +16,8 @@ Remove the content-sidebar-wrap top and bottom margins
 Remove the content-sidebar-wrap top margin
 #### .no-bottom-margin
 Remove the content-sidebar-wrap bottom margin
+#### .padded-wide-alignment
+Adds right and left padding to wide and full aligned elements
 
 #### .padding-all
 Standard mobile and desktop padding on all sides

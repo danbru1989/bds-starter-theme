@@ -5,6 +5,11 @@
 
 	// Change post title styles.
 	.editor-post-title__input {}
+
+	.editor-post-permalink {
+		margin: 0 auto;
+		max-width: $entry-content--max-width;
+	}
 }
 
 .wp-block {
