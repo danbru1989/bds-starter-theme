@@ -2,6 +2,20 @@
 
 
 
+// Breakpoints
+
+$break-point-xxs    : 1px;
+$break-point-xs     : 320px;
+$break-point-s      : 480px;
+$break-point-ms     : 600px;
+$break-point-ml     : 768px;
+$break-point-l      : 1024px;
+$break-point-xl     : 1280px;
+$break-point-xxl    : 1366px;
+$break-point-xxxl   : 1600px;
+
+
+
 // – TO USE: "@include media(ml) {...code in here...;}"
 
 @mixin media($break-point) { // Widths of 1px through 320px
