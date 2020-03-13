@@ -29,7 +29,13 @@ add_action(
 
 		wp_enqueue_style( 'dashicons' );
 
-		wp_enqueue_style( 'font-awesome', 'https://use.fontawesome.com/releases/v5.6.3/css/all.css', array(), genesis_get_theme_version() );
+		wp_enqueue_script(
+			genesis_get_theme_handle() . '-font-awesome',
+			'https://kit.fontawesome.com/7c37585a60.js',
+			array(),
+			genesis_get_theme_version(),
+			false,
+		);
 
 		wp_enqueue_style(
 			genesis_get_theme_handle() . '-main',
