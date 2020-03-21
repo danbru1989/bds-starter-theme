@@ -4,14 +4,20 @@ hr,
 .wp-block-separator {
 	border: none;
 	border-collapse: collapse;
-	border-top: 2px solid $color--text-dark;
+	border-top: 2px solid;
 	clear: both;
-	margin: $desktop-spacing calc(40%) !important;
+	margin: $desktop-spacing * 2 auto !important;
+	max-width: 35%;
 
-	&.is-style-wide {margin: $desktop-spacing 0 !important;}
+	&.is-style-wide {
+		margin: $desktop-spacing * 2 0 !important;
+		max-width: none;
+	}
 
 	&.is-style-dots {
-		margin: $desktop-spacing 0 !important;
+		margin: $desktop-spacing * 2 0 !important;
+		max-width: none;
+		border-top: none;
 		&:before {
 			font-size: 36px;
 			text-align: center;
