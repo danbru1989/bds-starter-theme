@@ -61,6 +61,8 @@ Add standard mobile and desktop whitespace to an element
 Add standard theme transition effects
 
 ## Change Log
+3.1.6 – Improved separator blocks.
+
 3.1.5 – Changed Font Awesome to JavaScript.
 
 3.1.4 – Added alert and notice box styles.
