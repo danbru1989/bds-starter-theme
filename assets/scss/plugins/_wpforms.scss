@@ -33,4 +33,19 @@
             margin-left: 0 !important;            
         }
     }
+
+    &.wpforms-list-2-columns ul,
+    &.wpforms-list-3-columns ul {
+        display: block;
+        @include media(s) {display: flex;}
+
+        li {
+            width: 100%;
+            @include media(s) {width: 50%;}
+        }
+    }
+
+    &.wpforms-list-3-columns ul li {
+        @include media(ml) {width: 33.3333%;}
+    }
 }
