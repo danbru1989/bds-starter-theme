@@ -61,6 +61,8 @@ Add standard mobile and desktop whitespace to an element
 Add standard theme transition effects
 
 ## Change Log
+3.1.9 – [ADDED] Added width 100% and overflow-x hidden to body element.
+
 3.1.8 – [FIXED] Added support for WPForms checkbox columns.
 
 3.1.7 – [FIXED] Gallery Blocks padding.
