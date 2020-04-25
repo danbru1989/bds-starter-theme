@@ -6,6 +6,8 @@ body {
 	font-family: $font-stack--primary;
 	font-size: $body--font-size;
 	line-height: $body--line-height;
+	width: 100%;
+	overflow-x: hidden;
 }
 
 a {
