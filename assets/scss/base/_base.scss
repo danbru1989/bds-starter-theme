@@ -6,9 +6,10 @@ body {
 	font-family: $font-stack--primary;
 	font-size: $body--font-size;
 	line-height: $body--line-height;
-	width: 100%;
-	overflow-x: hidden;
 }
+
+// Prevents right side overflow and fixes scroll bar issue in some browsers: https://www.billerickson.net/full-and-wide-alignment-in-gutenberg/.
+.site-container {width: 100%; overflow-x: hidden;}
 
 a {
 	color: $color--link-dark;
