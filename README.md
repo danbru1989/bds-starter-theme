@@ -3,6 +3,8 @@
 This is the custom Genesis starter theme for Brubaker Design Services. It provides a modular file structure and SASS partials for quick Wordpress developement. The Genesis Sample theme provided the foundation for this starter theme.
 
 ## Utility Classes
+#### .display-none
+Hides the element
 #### .notice-box
 For adding the notice box styles to a paragraph
 #### .alert-box
@@ -61,6 +63,8 @@ Add standard mobile and desktop whitespace to an element
 Add standard theme transition effects
 
 ## Change Log
+3.2.0 – [ADDED] Added display-none utility class.
+
 3.1.9 – [ADDED] Added width 100% and overflow-x hidden to .site-container.
 
 3.1.8 – [FIXED] Added support for WPForms checkbox columns.
